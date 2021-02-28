@@ -1,0 +1,53 @@
+---
+title: "Fars functions details"
+author: "Jose Coello"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{details}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+#library(trypackage)
+```
+
+# Description
+
+This package will be using data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+This package has five functions:
+
+1. fars_read: This is a function that reads data from US National Highway Traffic Safety Administration's found in the working directory.
+
+2. make_filename: This function creates the name of the US National Highway Traffic Safety Administration's data set for the selected year.
+
+3. fars_read_years: This function reads data from the US National Highway Traffic Safety Administration and returns the variables month and year.
+
+4. fars_summarize_years: This function summarizes fatal injuries sustained in motor vehicle traffic accidents by month.
+
+5. fars_map_state: This function graphs the latitude and longitud of the selected state.
+
+# Example
+
+```{r}
+# year <- make_filename(year = 2013)
+# 
+# data <- fars_read(filename = year)
+# 
+# data2 <- fars_read_years(2013)
+# 
+# data3 <- fars_summarize_years(years = 2013)
+# 
+# fars_map_state(state.num = 1, year = 2013)
+```
+
+

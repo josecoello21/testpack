@@ -1,0 +1,9 @@
+exportPattern("^[[:alpha:]]+")
+import(readr)
+import(magrittr)
+import(graphics)
+import(maps)
+import(dplyr)
+import(tidyr)
+
+
