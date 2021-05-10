@@ -1,2 +1,3 @@
 ^trypackage\.Rproj$
 ^\.Rproj\.user$
+^\.travis\.yml$
